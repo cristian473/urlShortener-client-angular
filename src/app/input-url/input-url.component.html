@@ -1,0 +1,13 @@
+<input
+  class="input-url"
+  id="input-url"
+  #inputUrl
+  placeholder="Paste the complete url here..."
+/>
+<button
+  type="button"
+  (click)="handleShortUrl.emit(inputUrl.value)"
+  class="generate-button"
+>
+  Short
+</button>

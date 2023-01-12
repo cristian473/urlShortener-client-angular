@@ -1,0 +1,24 @@
+.url-input-container {
+  margin-top: 30px;
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.url-generated-container {
+  margin-top: 30px;
+}
+
+.urls-saved-list {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+}
+.urls-saved-list .url-saved-card {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}

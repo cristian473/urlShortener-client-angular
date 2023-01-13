@@ -328,14 +328,36 @@
   <div class="url-input-container">
     <app-input-url (handleShortUrl)="generateShortUrl($event)"></app-input-url>
     <div class="url-generated-container" *ngIf="urlGenerated">
-      Url shorted:
-      <a href="https://{{ urlGenerated }}">{{ urlGenerated }}</a>
-      <button (click)="saveUrlGenerated()">Save</button>
+      <div class="url-generated-box">
+        <h4>Result:</h4>
+        <div class="url-container">
+          <input value="https://{{ urlGenerated }}" disabled />
+          <button (click)="copyUrlGenerated()">
+            <img src="../assets/copyToClipIcon.png" />
+          </button>
+        </div>
+        <div class="action-buttons-container">
+          <button (click)="clear()">Clear</button>
+          <button (click)="saveUrlGenerated()">Save</button>
+        </div>
+      </div>
     </div>
   </div>
   <div class="urls-saved-list" *ngIf="urlsSaved.length > 0">
     <div class="url-saved-card" *ngFor="let url of urlsSaved">
-      <a href="https://{{ url }}">{{ url }}</a>
+      <h4>{{ url.label }}</h4>
+      <div>
+        <p><strong>Shorted:</strong> {{ url.short }}</p>
+        <button (click)="copyUrlGenerated()">
+          <img src="../assets/copyToClipIcon.png" />
+        </button>
+      </div>
+      <div>
+        <p><strong>Original:</strong> {{ url.original }}</p>
+        <button (click)="copyUrlGenerated()">
+          <img src="../assets/copyToClipIcon.png" />
+        </button>
+      </div>
     </div>
   </div>
 

@@ -8,6 +8,16 @@
 
 .url-generated-container {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.url-generated-box {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .urls-saved-list {
@@ -16,9 +26,110 @@
   flex-direction: column;
 }
 .urls-saved-list .url-saved-card {
-  padding: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 5px 0px rgba(122, 122, 122, 0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(122, 122, 122, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(122, 122, 122, 0.75);
+}
+
+.urls-saved-list .url-saved-card div {
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  font-size: medium;
+  margin-bottom: 5px;
+}
+
+.urls-saved-list .url-saved-card h4 {
+  margin-bottom: 16px;
+  font-size: large;
+}
+
+.urls-saved-list .url-saved-card div:hover button {
+  opacity: 1;
+}
+
+.urls-saved-list .url-saved-card div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.urls-saved-list .url-saved-card div button:hover {
+  background-color: #ddd;
+}
+
+.urls-saved-list .url-saved-card div button img {
+  width: 15px;
+  height: 15px;
+}
+
+.action-buttons-container {
+  width: 100%;
+}
+
+.url-container {
+  display: flex;
+  width: 80%;
+}
+
+.url-container input {
+  height: 35px;
+  font-size: 20px;
+  width: 80%;
+  padding: 10px;
+  background-color: #fff;
   border: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.url-container button {
+  border: 1px solid #ddd;
+  padding: 5px;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #fff;
+  width: 20%;
+}
+
+.url-container button img {
+  width: 25px;
+}
+
+.action-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.action-buttons-container button {
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-buttons-container button:hover {
+  box-shadow: 0px 3px 5px 0px rgba(211, 211, 211, 0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(211, 211, 211, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(211, 211, 211, 0.75);
 }
